@@ -86,6 +86,14 @@ COMMIT;
 ;
 ```
 
+Before:
+![Before](https://github.com/kzawad1/SqlTxtInsertCmdExpandCS/blob/master/Docs/Example_Compare_Before.png)
+
+After:
+![After](https://github.com/kzawad1/SqlTxtInsertCmdExpandCS/blob/master/Docs/Example_Compare_After.png)
+
+
+
 # License
 
 To do.
