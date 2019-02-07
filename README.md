@@ -1,6 +1,8 @@
 # Overview
 The main purpose of this project is to take a text file with SQL statements and replace the one line "INSERT" statement with a multiple line insert statement with comments.  This is made so that it is easier to compare using a file comparison tool such as MELD or WinMerge or others.
 
+This tool was written in C# to save time since so many libraries exist for it.  The hope is to re-write it in C++ in the future.
+
 # Example Output
 To show by example of what the utility does, below are two examples of a SQL text file: (1) input file, & (2) output file.
 
