@@ -4,13 +4,13 @@ The main purpose of this project is to take a text file with SQL statements and 
 # Example Output
 To show by example of what the utility does, below are two examples of a SQL text file: (1) input file, & (2) output file.
 
-1) Generate  a *.sql file
+## Generate  a '*.sql' file
 
 To get a text representation of a SQL database one can execute the command below:
 ```
 sqlite3 test.db .dump > test.db.sql
 ```
-2) After that pass the **test.db.sql** through **SqlTxtInsertCmdExpandCS**.
+## After that pass the 'test.db.sql' through 'SqlTxtInsertCmdExpandCS'
 
 ```
 >SqlTxtInsertCmdExpandCS.exe test.db.sql
@@ -24,7 +24,7 @@ Finished with Parsing, expanded 3 INSERT statements.
 >
 ```
 
-3) Compare the output **test.db.sql** & **test.db.YYYY-MM-DD_HHMMSS.sql**
+## Compare the output 'test.db.sql' & 'test.db.YYYY-MM-DD_HHMMSS.sql'
 
 Input:
 ```
