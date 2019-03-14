@@ -75,7 +75,11 @@ namespace SqlTxtInsertCmdExpandCS
                 strSqlInsertEntryNew += strFind;
                 strSqlInsertEntryNew += "\n"; // "\r\n"
 
-                string[] strValues = strTblInsertData.Split(',');
+                // Simple split, just based on comma
+                //string[] strValues = strTblInsertData.Split(',');
+                // Smart split based on comma, but ignoring comma split if between quote,
+                // such as "'100 N. Riverside Plaza, Suite 1650'"
+                string[] strValues = Regex.Split(strTblInsertData, @",(?=(?:[^\']*\'[^\']*\')*[^\']*$)");
                 int iCount = 0;
                 foreach (string s in strValues)
                 {
